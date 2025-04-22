@@ -1,0 +1,76 @@
+/* Shake animation for tripple-click easter egg */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5px, 0); }
+  20% { transform: translate(5px, 0); }
+  30% { transform: translate(-5px, 0); }
+  40% { transform: translate(5px, 0); }
+  50% { transform: translate(-5px, 0); }
+  60% { transform: translate(5px, 0); }
+  70% { transform: translate(-5px, 0); }
+  80% { transform: translate(5px, 0); }
+  90% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Glitch effect for text */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-3px, 2px);
+    opacity: 0.9;
+  }
+  40% {
+    transform: translate(-3px, -2px);
+    opacity: 0.8;
+  }
+  60% {
+    transform: translate(3px, 2px);
+    opacity: 0.9;
+  }
+  80% {
+    transform: translate(3px, -2px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+/* Heartbeat for request button */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Import for main code */
+.glitch-active {
+  animation: glitch 0.3s infinite;
+}
+
+.heartbeat {
+  animation: heartbeat 1s infinite;
+}
+
+/* Adding special styles for floating quote */
+.floating-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+}
