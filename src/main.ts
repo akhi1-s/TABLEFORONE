@@ -74,7 +74,7 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 // outputEncoding and sRGBEncoding are deprecated, use outputColorSpace instead
 (renderer as any).outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.0;
+renderer.toneMappingExposure = 0.8;
 
 const container = document.getElementById('scene-container');
 if (container) {
